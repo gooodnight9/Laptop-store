@@ -461,7 +461,7 @@ h4 {
 .gender-female input {
     margin-right: 10px; /* Khoảng cách giữa radio và label */
     transform: scale(1.2); /* Tăng kích thước radio */
-    accent-color: #007bff; /* Màu radio (hỗ trợ trình duyệt mới) */
+    accent-color: #4da674; /* Màu radio (hỗ trợ trình duyệt mới) */
 }
 
 .gender-male label,
@@ -772,7 +772,7 @@ h4 {
     font-weight: 600;
     font-size: 30px;
     line-height: 100%;
-    background-color: #c5c784; /* Nền màu xám nhạt */
+    background-color: #c1e6ba; /* Nền màu xám nhạt */
     border: 2px solid #162006; /* Đường viền màu đen */
     border-radius: 10px; /* Bo góc */
     display: flex;
@@ -786,7 +786,7 @@ h4 {
 .pay-cash button:hover {
     transform: scale(1.05); /* Phóng to khi hover */
     box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2); /* Đổ bóng đậm hơn khi hover */
-    background-color: #80a416;
+    background-color: #4da674;
     border-color: #000; /* Đổi màu đường viền khi hover */
 }
 
