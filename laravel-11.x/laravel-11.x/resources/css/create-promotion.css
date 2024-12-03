@@ -84,8 +84,19 @@ h3 {
     font-size: 100%;
     line-height: 100%;
 }
-.information-promotion-input select,
-.information-promotion-input input[type="text"] {
+.information-promotion-input select {
+    width: 55%; /* Chiếm toàn bộ chiều ngang của container cha */
+    height: 60%; /* Chiều cao cố định cho ô nhập */
+    border-radius: 10px; /* Bo góc */
+    border: 1px solid #ccc; /* Thêm viền để phân biệt */
+    padding: 0.5rem; /* Thêm khoảng cách bên trong ô nhập */
+    font-family: "Inter"; /* Đồng nhất font chữ */
+    font-size: 1rem; /* Kích thước chữ vừa đủ */
+    margin-left: auto;
+}
+
+.information-promotion-input input[type="text"],
+.information-promotion-input input[type="email"] {
     width: 50%; /* Chiếm toàn bộ chiều ngang của container cha */
     height: 60%; /* Chiều cao cố định cho ô nhập */
     border-radius: 10px; /* Bo góc */
@@ -96,6 +107,27 @@ h3 {
     margin-left: auto;
 }
 
+#dob-customer {
+    width: 50%; /* Chiếm toàn bộ chiều ngang của container cha */
+    height: 60%; /* Chiều cao cố định cho ô nhập */
+    border-radius: 10px; /* Bo góc */
+    border: 1px solid #ccc; /* Thêm viền để phân biệt */
+    padding: 0.5rem; /* Thêm khoảng cách bên trong ô nhập */
+    font-family: "Inter"; /* Đồng nhất font chữ */
+    font-size: 1rem; /* Kích thước chữ vừa đủ */
+    margin-left: auto;
+}
+
+#dob-staff {
+    width: 50%; /* Chiếm toàn bộ chiều ngang của container cha */
+    height: 60%; /* Chiều cao cố định cho ô nhập */
+    border-radius: 10px; /* Bo góc */
+    border: 1px solid #ccc; /* Thêm viền để phân biệt */
+    padding: 0.5rem; /* Thêm khoảng cách bên trong ô nhập */
+    font-family: "Inter"; /* Đồng nhất font chữ */
+    font-size: 1rem; /* Kích thước chữ vừa đủ */
+    margin-left: auto;
+}
 .date-promotion input {
     width: 40%; /* Chiếm toàn bộ chiều ngang của container cha */
     border-radius: 10px; /* Bo góc */
