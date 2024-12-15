@@ -1,0 +1,253 @@
+/* Responsive cơ bản */
+
+/* Màn hình nhỏ hơn 1200px (Laptop nhỏ) */
+@media (max-width: 1200px) {
+    aside {
+        width: 200px; /* Thu gọn menu bên trái */
+    }
+    
+    .card h2 {
+        font-size: 1.5rem; /* Giảm kích thước chữ trong thẻ thông tin */
+    }
+  }
+  
+  /* Màn hình nhỏ hơn 992px (Máy tính bảng ngang) */
+  @media (max-width: 992px) {
+    aside {
+        width: 180px;
+        font-size: 14px;
+    }
+  
+    .card h2 {
+        font-size: 1.3rem;
+    }
+  
+    .card {
+        padding: 10px;
+    }
+  }
+  
+  /* Màn hình nhỏ hơn 768px (Máy tính bảng dọc) */
+  @media (max-width: 768px) {
+    aside {
+        position: fixed; /* Chuyển menu thành thanh điều hướng ẩn */
+        width: 100%;
+        height: 60px;
+        z-index: 1000;
+        top: 0;
+        left: 0;
+        background-color: #343a40;
+    }
+    
+    aside ul {
+        flex-direction: row; /* Hiển thị menu thành thanh ngang */
+        justify-content: space-around;
+        padding: 0;
+        margin: 0;
+    }
+  
+    aside ul li {
+        margin: 0;
+    }
+  
+    .flex-grow-1 {
+        margin-top: 60px; /* Đẩy nội dung xuống dưới menu */
+    }
+  
+    .card {
+        margin-bottom: 20px;
+    }
+  }
+  
+  /* Màn hình nhỏ hơn 576px (Điện thoại) */
+  @media (max-width: 576px) {
+    
+    /* Thẻ thông tin */
+  
+    
+    
+  /* Thẻ thông tin */
+  .info-card, .info-card-second, .info-card-third {
+    justify-content: center; /* Căn giữa nội dung theo trục dọc */
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    
+   
+  
+  
+  }
+     
+    
+  
+  
+  
+  
+    /* Ẩn menu bên trái mặc định */
+    #sidebar {
+      display: none;
+    }
+  
+    /* Hiển thị khi người dùng nhấn vào hamburger button */
+    #sidebar.d-none {
+      display: block;
+    }
+    
+    /* Cải thiện button hamburger */
+    #menu-toggle {
+      font-size: 30px;
+      background: transparent;
+      border: none;
+      color: white;
+    }
+    
+    .card {
+        font-size: 0.9rem; /* Giảm font-size của thẻ card */
+    }
+  
+    header {
+        flex-direction: row; /* Đảm bảo các phần tử xếp ngang */
+        justify-content: space-between;
+        align-items: flex-start;
+        margin-top: -60px; /* Loại bỏ margin-top nếu không cần thiết */
+        padding: 10px 15px; /* Điều chỉnh khoảng cách padding */
+        height: auto; /* Đảm bảo chiều cao của header không quá lớn */
+    }
+  
+    header h1 {
+        font-size: 1.5rem; /* Giảm kích thước font của h1 */
+        margin-bottom: 10px;
+        text-align: left; /* Căn trái tiêu đề cho phù hợp */
+    }
+  
+    header img {
+        width: 35px; /* Giảm kích thước hình ảnh */
+        height: 35px;
+    }
+  
+    aside ul li a {
+        font-size: 12px; /* Thu nhỏ kích thước chữ trong menu */
+    }
+  
+    .material-symbols-outlined {
+        font-size: 24px; /* Điều chỉnh kích thước biểu tượng trong header */
+    }
+  }
+  
+  .menu-logo {
+    width: 100%;       /* Logo chiếm toàn bộ chiều rộng của khung chứa */
+    max-width: 350px;  /* Giới hạn tối đa chiều rộng bằng chiều rộng menu */
+    object-fit: contain; /* Đảm bảo logo không bị méo nếu tỷ lệ thay đổi */
+  }
+  
+  .bg-white {
+    border: 1px solid #ddd; /* Đường viền màu xám nhạt */
+  }
+  
+  .material-symbols-outlined {
+    display: inline-block;
+    font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 20;
+  }
+  
+  #transactionMenu ul {
+    list-style-type: none; /* Loại bỏ dấu tròn */
+    padding-left: 40px; /* Xóa bỏ khoảng cách bên trái */
+  }
+  
+  .btn-menu {
+    background-color: white; /* Nền trắng */
+    border: none; /* Loại bỏ đường viền */
+    display: flex;
+    align-items: center;
+    width: 100%; /* Đảm bảo nút chiếm toàn bộ chiều rộng */
+    padding: 10px;
+    text-align: left; /* Canh trái nội dung */
+    cursor: pointer; /* Thay đổi con trỏ chuột thành hình bàn tay */
+    transition: background-color 0.3s; /* Thêm hiệu ứng chuyển màu mượt mà */
+    border-radius: 10px;
+  }
+  
+  .btn-menu:hover {
+    background-color: #f2f2f2; /* Màu xám nhạt khi hover */
+  }
+  
+  .btn-menu span {
+    font-size: inherit; /* Giữ nguyên kích thước chữ */
+    color: inherit; /* Giữ nguyên màu sắc */
+  }
+  
+  /* Header Custom */
+  .header-custom {
+    background-color: #17391E;
+    height: 216px; /* Chiều cao ban đầu của header */
+    position: relative;
+    z-index: 1;
+    font-size: 20px;
+    padding-bottom: 0; /* Loại bỏ khoảng padding dưới */
+  }
+  
+  .header-custom h1 {
+    font-size: 33px; /* Tăng kích thước nếu cần */
+  }
+  
+  /* Content Custom */
+  .content-custom {
+    margin-top: -150px; /* Đẩy nội dung lên để chồng lên header */
+    position: relative;
+    z-index: 2;
+  }
+  
+  /* Card Custom */
+  .info-card .card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    border: 1px solid #E0E0E0;
+    border-radius: 8px;
+    background: white;
+    height: 221px;
+    width: 353.29px;
+    margin-top: 50px;
+  }
+  
+  .info-card .card-body h5 {
+    color: #6C757D;
+    font-weight: 600;
+    font-size: 16px;
+    margin-bottom: 10px;
+  }
+  
+  .info-card .card-body h2 {
+    font-size: 28px;
+    font-weight: bold;
+    margin: 10px 0;
+  }
+  
+  .info-card .card-body .card-text {
+    display: inline-block;
+    padding: 5px 10px;
+    background-color: #E8F8E9;
+    color: #35CC5F;
+    border-radius: 5px;
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  .info-card-second .card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    border-radius: 10px;
+    background: white;
+    height: 221px;
+    width: 310px;
+    margin-top: 50px; /* Khoảng cách giữa thẻ và phần nội dung khác */
+    margin-left: 93px;
+  }
+  
+  .info-card-third .card {
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1); /* Đổ bóng */
+    border-radius: 10px;
+    background: white;
+    height: 221px;
+    width: 310px;
+    margin-top: 50px; /* Khoảng cách giữa thẻ và phần nội dung khác */
+    margin-left: 143px;
+  }
+  
