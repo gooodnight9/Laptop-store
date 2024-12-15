@@ -7,7 +7,7 @@
     left: 50%; /* Định vị phần tử theo chiều ngang */
     transform: translate(-50%, -50%); /* Canh giữa hoàn hảo */
     background: #ebebeb;
-    border-radius: 20px;
+    border-radius: 4%;
     font-family: "Poppins";
     font-style: normal;
     font-weight: 500;

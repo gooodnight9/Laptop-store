@@ -3,47 +3,54 @@
     <head>
         <meta charset="UTF-8" />
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <title>Thêm kho</title>
-        <link rel="stylesheet" href="../../css/create-promotion.css" />
+        <title>Thêm nhân viên</title>
+        <link rel="stylesheet" href="../../../css/create-promotion.css" />
     </head>
     <body>
         <form action="" class="create-promotion">
-            <h1>Thêm kho</h1>
+            <h1>Thêm khách hàng</h1>
             <div class="information-promotion">
                 <div>
-                    <h3>Thông tin kho</h3>
+                    <h3>Thông tin nhân viên</h3>
                 </div>
                 <div class="information-promotion-input">
                     <div>
                         <div>
                             <label>
-                                Mã kho:
+                                Mã nhân viên:
                                 <input
                                     type="text"
-                                    id="code-storehouse"
-                                    placeholder="Mã kho tự động"
+                                    id="code-staff"
+                                    placeholder="Mã nhân viên tự động"
                                     disabled
                                 />
                             </label>
                         </div>
                         <div>
                             <label>
-                                Người quản lí:
-                                <select id="manager-storehouse"></select>
+                                Họ và tên:
+                                <input
+                                    type="text"
+                                    id="name-staff"
+                                    placeholder="Họ tên nhân viên"
+                                />
                             </label>
                         </div>
                         <div>
                             <label>
-                                Địa chỉ:
-                                <select id="province-customer">
-                                    <option value="0">Chọn tỉnh</option>
-                                </select>
+                                Email:
+                                <input
+                                    type="email"
+                                    id="email-staff"
+                                    placeholder="Email"
+                                />
                             </label>
                         </div>
                         <div>
                             <label>
-                                <select id="ward-customer">
-                                    <option value="0">Chọn xã</option>
+                                Chức vụ:
+                                <select id="position-staff">
+                                    <option value="0">Chọn chức vụ</option>
                                 </select>
                             </label>
                         </div>
@@ -51,29 +58,36 @@
                     <div>
                         <div>
                             <label>
-                                Tên kho:
-                                <input type="text" id="name-storehouse" />
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                Ghi chú:
-                                <input type="text" id="notes-storehouse" />
-                            </label>
-                        </div>
-                        <div>
-                            <label>
-                                <select id="district-customer">
-                                    <option value="0">Chọn Huyện</option>
+                                Giới tính:
+                                <select id="gender-customer">
+                                    <option value="1">Nam</option>
+                                    <option value="0">Nữ</option>
                                 </select>
                             </label>
                         </div>
                         <div>
                             <label>
+                                Số điện thoại:
                                 <input
                                     type="text"
-                                    id="specific-address-customer"
-                                    placeholder="Địa chỉ cụ thể"
+                                    id="numberphone-staff"
+                                    placeholder="0909090909"
+                                />
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Ngày sinh:
+                                <input type="date" id="dob-staff" name="dob" />
+                            </label>
+                        </div>
+                        <div>
+                            <label>
+                                Ghi chú:
+                                <input
+                                    type="text"
+                                    id="notes-staff"
+                                    placeholder="Ghi chú"
                                 />
                             </label>
                         </div>
