@@ -12,7 +12,8 @@ Trang web phải đảm bảo được các mục tiêu:
 | 2  | Lê Thị Kim Ngân   | 22520931@gm.uit.edu.vn |
 | 3  | Trần Quang Hải    | 22520932@gm.uit.edu.vn |
 | 4  | Đoàn Văn Hải      | 22520851@gm.uit.edu.vn |
-
+# Website giới thiệu nhóm
+https://sites.google.com/view/nhom23laptop
 # Các công nghệ sử dụng trong project
 - Front-end: Bootstrap 
 - Back-end: Laravel PHP
