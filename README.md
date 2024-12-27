@@ -15,7 +15,7 @@ Trang web phải đảm bảo được các mục tiêu:
 
 # Các công nghệ sử dụng trong project
 - Front-end: Bootstrap 
-- Back-end: API được xây dựng trên PHP (Laravel)
+- Back-end: Laravel PHP
 - Cơ sở dữ liệu: MySQL
 # Các modules
 - Quản lý cửa hàng (thêm, sửa, xóa thông tin) dành cho người bán:
